@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./../fontawesome-free-6.5.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="player.css">
+</head>
+
+<body>
+    <section class="player">
+        <div class="details">
+            <div id="now_playing">X of Y playing</div>
+            <div id="track_img"></div>
+            <div id="track_name">Track Name</div>
+            <div id="track_artist">Track artist</div>
+        </div>
+        <div class="button">
+            <div id="prev_track">
+                <i class="fas fa-step-backward fa-2x"></i>
+            </div>
+            <div id="playpause_track">
+                <!-- <i class="fas fa-play-circle fa-5x"></i> -->
+                <i class="fa-solid fa-circle-play fa-5x"></i>
+            </div>
+            <div id="next_track">
+                <i class="fas fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="slider_container">
+            <div id="current_time">00:00</div>
+            <input type="range" id="seek_slider" min="0" max="100" value="0">
+            <div id="total_duration">00:00</div>
+        </div>
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" id="volume_slider" min="0" max="100" value="55">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </section>
+    <script src="player.js"></script>
+</body>
+
+</html>
